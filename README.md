@@ -49,6 +49,12 @@ python expm/adaptive_trajectory_optimization/data_loader.py
    2. 如果 Map2 更接近，对于运行机制的猜想得到了支持：
       1. U_Y 确实包含地图结构信息
       2. （结合之前的结果）地图结构信息通过维度调制作用，对策略起到了调控作用
+3. **任务的内容是：**
+   1. **将原始数据集切分成合适的训练集、测试集**
+   2. **选取合适的 Decoder 进行认知地图的解码**
+   3. **分别使用 CCA[0:10] 以及 CCA[10:128] 对 Decoder 进行训练**
+   4. **比较哪部分神经表征的 decoding loss 更小**
+
 
 ![](./docs/2.png)
 
