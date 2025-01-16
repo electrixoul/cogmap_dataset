@@ -1,7 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-centroids_feature_space_transformed = np.load('./data/centroids_feature_space_transformed.npy')
+# centroids_feature_space_transformed = np.load('./data/centroids_feature_space_transformed.npy')
+# centroids_feature_space_transformed = np.load('./data/rnn_states_early_stable.npy')
+centroids_feature_space_transformed = np.load('./data/rnn_states_early_stable_feature_space_transformed.npy')
+# centroids_feature_space_transformed = np.load('./data/centroids.npy')
 landscapes_np = np.load('./data/landscapes.npy')
 
 print("centroids_feature_space_transformed.shape", centroids_feature_space_transformed.shape)
